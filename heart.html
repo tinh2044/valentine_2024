@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="link-css" rel="stylesheet" href="./heart.css" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background: #000;
+        overflow: hidden;
+      }
+      canvas {
+        /* position: absolute; */
+        /* left: 0; */
+        /* top: 0; */
+        width: 50%;
+        height: 100%;
+        background: transparent;
+      }
+      .container {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        height: 100%;
+      }
+      .heart-big {
+        width: 50%;
+        height: 100%;
+        transition: all 3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div class="container">
+      <canvas id="heart-1" class="heart-big"></canvas>
+      <canvas id="heart-2" class="heart-big"></canvas>
+    </div>
+    <script src="heart.js"></script>
+  </body>
+</html>
